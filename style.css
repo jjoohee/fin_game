@@ -1,0 +1,39 @@
+
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{font-family: 'DungGeunMo'; color: white;}
+p{line-height: 22px;}
+
+.hide{width: 50px; height: 50px; position: absolute; left: 0%; top: 0%; background: black;}
+
+#map1{background: url('hall.png'); width: 600px; height: 450px;
+	position: absolute;
+	top: 60px;
+	left: calc(50% - 300px);}
+
+#cod {
+	position: absolute;
+	right: 19.63%;
+	top: 23.1%;
+	}
+
+#cod:hover{width: 135px; right: 19.3%; top: 22.3%;}
+
+#rest{position: absolute; left: 20%; top: 23.1%;}
+#rest:hover{width: 75px; left: 19.75%; top: 22.2%;}
+
+#pro{position: absolute; right: 10%; bottom: 27%;}
+#pro:hover {width: 52px;}
+#fri1{position: absolute; left: 10%; top: 42%;}
+#fri1:hover {width: 52px;}
+
+.textbox{background: black; width: 500px; height: 100px; position: absolute; left: calc(50% - 250px); top: 60%;  padding: 10px; display: none;}
+#talk{display: none; background: black; width: 500px; height: 100px; position: absolute; left: calc(50% - 250px); top: 60%;  padding: 10px;}
+
+.sel{margin-top: 20px;}
+#Y:hover{background:white; color: black;}
+#N:hover{background:white; color: black;}
+#next{position: absolute; width: 55px; bottom: 5%;  right: 1%; text-align: center; display: none;}
+#next p:hover {background:white; color: black;}

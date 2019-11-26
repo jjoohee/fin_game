@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>이불 밖은 위험해</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+<div id="map1" class="pt-page pt-page-1">
+	<a href="#map2"><img src="comdoor.png" id="cod"></a>
+	
+	<img src="rest.png" id="rest">
+	<img src="professor.png" id="pro">
+	<img src="friend.png" id="fri1">
+	
+	<div class="textbox" id="talk">
+		<p class="maintext">이것은 텍스트 창입니다. 벌써부터 막막하네유 흑흑..</p>
+		<div class="sel">
+			<div class="yes">
+				<p id="Y">
+				-응
+				</p>
+			</div>
+			<div class="no">
+				<p id="N">
+				-아니
+			</p>
+			</div>
+			
+		</div>
+	</div>
+	<div class="textbox" id="nextyes1">
+		<p class="maintext">나갈 수가 없습니다 교수님.</p>
+		<div id="next">
+				<p>나가기</p>
+			</div>
+	</div>
+	<div class="textbox" id="nextno1">
+		<p class="maintext">나갈 수가 없어요...ㅠㅠ</p>
+		<div id="next2">
+				<p>나가기</p>
+			</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	var  astate = "off";
+	fri1.onclick = function(){
+			talk.style.display = "block";
+		
+		}
+
+
+		Y.onclick = function(){
+				if (astate == "off") {
+				nextyes1.style.display = "block";
+				next.style.display = "block";
+				astate = "on";
+			}
+				else if (astate == "on") {
+					next.onclick = function(){
+					talk.style.display = "none";
+					astate = "off";
+				}
+					
+					}
+				
+			}
+
+			
+		N.onclick = function(){
+			if (astate == "off") {
+				document.getElementById("talk").innerHTML = "이제 나가기 어떻게 하지";
+				talk.style.color = "white";
+				astate = "on";
+				}else{
+				talk.onclick = function(){
+					talk.style.display = "none";
+					}
+					astate = "off";
+				};
+				
+				}
+
+</script>
+
+</body>
+</html>
